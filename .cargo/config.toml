@@ -2,6 +2,6 @@
 rustflags = [
     "-C", "link-arg=-fuse-ld=lld",
     "--emit=asm",
-    # "-C", "target-feature=+crt-static"
+    "-C", "target-feature=+crt-static"
 ]
-target = "x86_64-pc-windows-msvc"
+target = "x86_64-pc-windows-gnu"
